@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite failures="0" time="0.201" errors="1" skipped="0" tests="2" name="com.song.test.MockMvcTest">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="E:\jdk1.7.0_79\jre\bin"/>
+    <property name="java.vm.version" value="24.79-b02"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="E:\aboutSong\erp-project-master\ssm-poject"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="CN"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="E:\aboutSong\erp-project-master\ssm-poject"/>
+    <property name="java.runtime.version" value="1.7.0_79-b15"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="E:\jdk1.7.0_79\jre\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\asus\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 8.1"/>
+    <property name="classworlds.conf" value="E:\aboutSong\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf7167985102753305099.tmp"/>
+    <property name="sun.jnu.encoding" value="GBK"/>
+    <property name="java.library.path" value="E:\jdk1.7.0_79\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;E:/jdk1.8.0_101/bin/../jre/bin/server;E:/jdk1.8.0_101/bin/../jre/bin;E:/jdk1.8.0_101/bin/../jre/lib/amd64;E:\jdk1.8.0_101\bin;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Users\asus\AppData\Local\Android\sdk\platform-tools;E:\maven\apache-maven-3.5.3\bin;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\MySQL\MySQL Server 5.5\bin;D:\apache-tomcat-9.0.0.M10\bin;D:\Git\cmd;C:\Program Files\VisualSVN Server\bin;C:\Users\asus\AppData\Local\Microsoft\WindowsApps;;D:\java-photon\eclipse;;."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="51.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="6.3"/>
+    <property name="user.home" value="C:\Users\asus"/>
+    <property name="user.timezone" value="Asia/Shanghai"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.7"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="asus"/>
+    <property name="java.class.path" value="C:\Users\asus\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_1.9.0.20180606-2035\jars\plexus-classworlds-2.5.2.jar"/>
+    <property name="java.vm.specification.version" value="1.7"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="E:\jdk1.7.0_79\jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B -s F:\apache-maven-3.6.1\conf\settings.xml install"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="zh"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.7.0_79"/>
+    <property name="java.ext.dirs" value="E:\jdk1.7.0_79\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="E:\jdk1.7.0_79\jre\lib\resources.jar;E:\jdk1.7.0_79\jre\lib\rt.jar;E:\jdk1.7.0_79\jre\lib\sunrsasign.jar;E:\jdk1.7.0_79\jre\lib\jsse.jar;E:\jdk1.7.0_79\jre\lib\jce.jar;E:\jdk1.7.0_79\jre\lib\charsets.jar;E:\jdk1.7.0_79\jre\lib\jfr.jar;E:\jdk1.7.0_79\jre\classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="E:\aboutSong\erp-project-master\ssm-poject\EMBEDDED"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase time="0.185" classname="com.song.test.MockMvcTest" name="testPage">
+    <error type="java.lang.NullPointerException">java.lang.NullPointerException
+	at com.song.test.MockMvcTest.testPage(MockMvcTest.java:58)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:75)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:252)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</error>
+    <system-err>���� 02, 2019 4:40:43 ���� org.springframework.test.context.web.WebTestContextBootstrapper getDefaultTestExecutionListenerClassNames
+��Ϣ: Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+���� 02, 2019 4:40:44 ���� org.springframework.test.context.web.WebTestContextBootstrapper getTestExecutionListeners
+��Ϣ: Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@541d4bce, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@4f5bec86, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@1c057a1e, org.springframework.test.context.support.DirtiesContextTestExecutionListener@2b9455f1, org.springframework.test.context.transaction.TransactionalTestExecutionListener@17965791, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@f4efcb0]
+���� 02, 2019 4:40:44 ���� org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+��Ϣ: Loading XML bean definitions from class path resource [applicationContext.xml]
+���� 02, 2019 4:40:46 ���� org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+��Ϣ: Loading XML bean definitions from class path resource [spring-task.xml]
+���� 02, 2019 4:40:46 ���� org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+��Ϣ: Loading XML bean definitions from class path resource [spring-mail.xml]
+���� 02, 2019 4:40:46 ���� org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+��Ϣ: Loading XML bean definitions from URL [file:src/main/webapp/WEB-INF/dispatcherServlet-servlet.xml]
+���� 02, 2019 4:40:46 ���� org.springframework.web.context.support.GenericWebApplicationContext prepareRefresh
+��Ϣ: Refreshing org.springframework.web.context.support.GenericWebApplicationContext@5f159092: startup date [Fri Aug 02 16:40:46 CST 2019]; root of context hierarchy
+���� 02, 2019 4:40:47 ���� org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler initialize
+��Ϣ: Initializing ExecutorService  &apos;qbScheduler&apos;
+���� 02, 2019 4:40:47 ���� org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker postProcessAfterInitialization
+��Ϣ: Bean &apos;qbScheduler&apos; of type [org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+���� 02, 2019 4:40:47 ���� com.mchange.v2.log.MLog &lt;clinit&gt;
+��Ϣ: MLog clients using java 1.4+ standard logging.
+���� 02, 2019 4:40:48 ���� com.mchange.v2.c3p0.C3P0Registry banner
+��Ϣ: Initializing c3p0-0.9.1 [built 16-January-2007 14:46:42; debug? true; trace: 10]
+���� 02, 2019 4:40:51 ���� org.springframework.web.servlet.handler.SimpleUrlHandlerMapping registerHandler
+��Ϣ: Mapped URL path [/**] onto handler &apos;org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0&apos;
+���� 02, 2019 4:40:51 ���� org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+��Ϣ: Mapped &quot;{[/admin/showDeptAndPostInfo]}&quot; onto public java.lang.String com.song.controller.AdminController.showDeptAndPostInfo(javax.servlet.http.HttpSession,org.springframework.ui.Model)
+���� 02, 2019 4:40:51 ���� org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+��Ϣ: Mapped &quot;{[/admin/ajax_showEmpInfo/{pn}]}&quot; onto public com.song.utils.CommonMsg com.song.controller.AdminController.ajax_showEmpInfo(int,java.lang.String,java.lang.String)
+���� 02, 2019 4:40:51 ���� org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+��Ϣ: Mapped &quot;{[/admin/showInviterInfo]}&quot; onto public java.lang.String com.song.controller.AdminController.showInviterInfo()
+���� 02, 2019 4:40:51 ���� org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+��Ϣ: Mapped &quot;{[/admin/showResumeInfo]}&quot; onto public java.lang.String com.song.controller.AdminController.showResumeInfo()
+���� 02, 2019 4:40:51 ���� org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+��Ϣ: Mapped &quot;{[/admin/getPerEmps/{id}],methods=[GET]}&quot; onto public com.song.utils.CommonMsg com.song.controller.AdminController.getPerEmps(int)
+���� 02, 2019 4:40:51 ���� org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+��Ϣ: Mapped &quot;{[/admin/showTrainInfo]}&quot; onto public java.lang.String com.song.controller.AdminController.showTrainInfo()
+���� 02, 2019 4:40:51 ���� org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+��Ϣ: Mapped &quot;{[/admin/showRapInfo]}&quot; onto public java.lang.String com.song.controller.AdminController.showRapInfo()
+���� 02, 2019 4:40:51 ���� org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+��Ϣ: Mapped &quot;{[/admin/showWageInfo]}&quot; onto public java.lang.String com.song.controller.AdminController.showWageInfo()
+���� 02, 2019 4:40:51 ���� org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+��Ϣ: Mapped &quot;{[/admin/delEmp]}&quot; onto public com.song.utils.CommonMsg com.song.controller.AdminController.delEmp(com.song.model.userEntity)
+���� 02, 2019 4:40:51 ���� org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+��Ϣ: Mapped &quot;{[/admin/showEmpInfo]}&quot; onto public java.lang.String com.song.controller.AdminController.showEmpInfo()
+���� 02, 2019 4:40:51 ���� org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+��Ϣ: Mapped &quot;{[/attendance/pushCarOutWork]}&quot; onto public com.song.utils.CommonMsg com.song.controller.AttendanceSheetController.pushCarOutWork(javax.servlet.http.HttpSession,java.util.Map&lt;java.lang.String, java.lang.Object&gt;)
+���� 02, 2019 4:40:51 ���� org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+��Ϣ: Mapped &quot;{[/attendance/AttendanceSheetData/{pn}]}&quot; onto public com.song.utils.CommonMsg com.song.controller.AttendanceSheetController.AttendanceSheetData(int,javax.servlet.http.HttpSession)
+���� 02, 2019 4:40:51 ���� org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+��Ϣ: Mapped &quot;{[/attendance/getDateRecords/{pn}]}&quot; onto public com.song.utils.CommonMsg com.song.controller.AttendanceSheetController.getDateRecords(int,javax.servlet.http.HttpSession,java.util.Map&lt;java.lang.String, java.lang.Object&gt;,java.lang.String,java.lang.String)
+���� 02, 2019 4:40:51 ���� org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+��Ϣ: Mapped &quot;{[/attendance/pushCardInWork]}&quot; onto public com.song.utils.CommonMsg com.song.controller.AttendanceSheetController.pushCardInWork(javax.servlet.http.HttpSession,com.song.model.AttendanceSheetEntity,java.util.Map&lt;java.lang.String, java.lang.Object&gt;)
+���� 02, 2019 4:40:51 ���� org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+��Ϣ: Mapped &quot;{[/attendance/findDailyRecord]}&quot; onto public com.song.utils.CommonMsg com.song.controller.AttendanceSheetController.findDailyRecord(javax.servlet.http.HttpSession,java.util.Map&lt;java.lang.String, java.lang.Object&gt;)
+���� 02, 2019 4:40:51 ���� org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+��Ϣ: Mapped &quot;{[/attendance/asUserData/{uId}]}&quot; onto public com.song.utils.CommonMsg com.song.controller.AttendanceSheetController.asUserData(int)
+���� 02, 2019 4:40:51 ���� org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+��Ϣ: Mapped &quot;{[/deptPost/updatePost],methods=[POST]}&quot; onto public com.song.utils.CommonMsg com.song.controller.DeptAndPostController.updatePost(com.song.model.JobPostEntity)
+���� 02, 2019 4:40:51 ���� org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+��Ϣ: Mapped &quot;{[/deptPost/getDmptByPId],methods=[GET]}&quot; onto public com.song.utils.CommonMsg com.song.controller.DeptAndPostController.getDmptByPId(int)
+���� 02, 2019 4:40:51 ���� org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+��Ϣ: Mapped &quot;{[/deptPost/deptAdd]}&quot; onto public com.song.utils.CommonMsg com.song.controller.DeptAndPostController.deptAdd(com.song.model.DeptEntity)
+���� 02, 2019 4:40:51 ���� org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+��Ϣ: Mapped &quot;{[/deptPost/getPosts/{emptId}],methods=[GET]}&quot; onto public com.song.utils.CommonMsg com.song.controller.DeptAndPostController.getPosts(int)
+���� 02, 2019 4:40:51 ���� org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+��Ϣ: Mapped &quot;{[/deptPost/getPosts]}&quot; onto public com.song.utils.CommonMsg com.song.controller.DeptAndPostController.getPosts()
+���� 02, 2019 4:40:51 ���� org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+��Ϣ: Mapped &quot;{[/deptPost/PostAdd]}&quot; onto public com.song.utils.CommonMsg com.song.controller.DeptAndPostController.PostAdd(com.song.model.JobPostEntity)
+���� 02, 2019 4:40:51 ���� org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+��Ϣ: Mapped &quot;{[/deptPost/updateDept],methods=[POST]}&quot; onto public com.song.utils.CommonMsg com.song.controller.DeptAndPostController.updateDept(com.song.model.DeptEntity)
+���� 02, 2019 4:40:51 ���� org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+��Ϣ: Mapped &quot;{[/deptPost/deptDel/{id}]}&quot; onto public com.song.utils.CommonMsg com.song.controller.DeptAndPostController.deptDel(int)
+���� 02, 2019 4:40:51 ���� org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+��Ϣ: Mapped &quot;{[/deptPost/getDeptBydID/{id}],methods=[GET]}&quot; onto public com.song.utils.CommonMsg com.song.controller.DeptAndPostController.getDeptBydID(int)
+���� 02, 2019 4:40:51 ���� org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+��Ϣ: Mapped &quot;{[/deptPost/PostDel/{id}]}&quot; onto public com.song.utils.CommonMsg com.song.controller.DeptAndPostController.PostDel(int)
+���� 02, 2019 4:40:51 ���� org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+��Ϣ: Mapped &quot;{[/deptPost/getEmps/{postId}]}&quot; onto public com.song.utils.CommonMsg com.song.controller.DeptAndPostController.getEmps(int)
+���� 02, 2019 4:40:51 ���� org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+��Ϣ: Mapped &quot;{[/deptPost/chDeptAndPost],methods=[POST]}&quot; onto public com.song.utils.CommonMsg com.song.controller.DeptAndPostController.chDeptAndPost(com.song.model.userEntity)
+���� 02, 2019 4:40:51 ���� org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+��Ϣ: Mapped &quot;{[/deptPost/getDepts]}&quot; onto public com.song.utils.CommonMsg com.song.controller.DeptAndPostController.getDepts()
+���� 02, 2019 4:40:51 ���� org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+��Ϣ: Mapped &quot;{[/deptPost/getPostById],methods=[GET]}&quot; onto public com.song.utils.CommonMsg com.song.controller.DeptAndPostController.getPostById(int)
+���� 02, 2019 4:40:51 ���� org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+��Ϣ: Mapped &quot;{[/employee/showEmpTrainInfo]}&quot; onto public java.lang.String com.song.controller.EmployeeController.showEmpTrainInfo()
+���� 02, 2019 4:40:51 ���� org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+��Ϣ: Mapped &quot;{[/employee/showEmpMessage]}&quot; onto public java.lang.String com.song.controller.EmployeeController.showEmpMessage(javax.servlet.http.HttpSession,org.springframework.ui.Model) throws java.text.ParseException
+���� 02, 2019 4:40:51 ���� org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+��Ϣ: Mapped &quot;{[/employee/showInterViewInfo]}&quot; onto public java.lang.String com.song.controller.EmployeeController.showInterViewInfo()
+���� 02, 2019 4:40:51 ���� org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+��Ϣ: Mapped &quot;{[/employee/showEmpTrainManage]}&quot; onto public java.lang.String com.song.controller.EmployeeController.showEmpTrainManage()
+���� 02, 2019 4:40:51 ���� org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+��Ϣ: Mapped &quot;{[/employee/showAttendanceSheet]}&quot; onto public java.lang.String com.song.controller.EmployeeController.showAttendanceSheet()
+���� 02, 2019 4:40:51 ���� org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+��Ϣ: Mapped &quot;{[/employee/showRapInfo]}&quot; onto public java.lang.String com.song.controller.EmployeeController.showRapInfo()
+���� 02, 2019 4:40:51 ���� org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+��Ϣ: Mapped &quot;{[/employee/showWageInfo]}&quot; onto public java.lang.String com.song.controller.EmployeeController.showWageInfo()
+���� 02, 2019 4:40:51 ���� org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+��Ϣ: Mapped &quot;{[/employee/showEmpInfo]}&quot; onto public java.lang.String com.song.controller.EmployeeController.showEmpInfo(javax.servlet.http.HttpSession,org.springframework.ui.Model)
+���� 02, 2019 4:40:51 ���� org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+��Ϣ: Mapped &quot;{[/employee/saveInfo],methods=[POST]}&quot; onto public java.lang.String com.song.controller.EmployeeController.saveInfo(com.song.model.userEntity,javax.servlet.http.HttpSession)
+���� 02, 2019 4:40:51 ���� org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+��Ϣ: Mapped &quot;{[/employee/showDeptInfo]}&quot; onto public java.lang.String com.song.controller.EmployeeController.showDeptInfo()
+���� 02, 2019 4:40:51 ���� org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+��Ϣ: Mapped &quot;{[/inviter/showInviterInfoJSON/{pn}]}&quot; onto public com.song.utils.CommonMsg com.song.controller.InviterController.showInviterInfo(int,java.lang.String)
+���� 02, 2019 4:40:51 ���� org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+��Ϣ: Mapped &quot;{[/inviter/updateInvite/{id}],methods=[POST]}&quot; onto public com.song.utils.CommonMsg com.song.controller.InviterController.updateInvite(int,com.song.model.InviteInfoEntity)
+���� 02, 2019 4:40:51 ���� org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+��Ϣ: Mapped &quot;{[/inviter/findById/{id}],methods=[GET]}&quot; onto public com.song.utils.CommonMsg com.song.controller.InviterController.findById(int)
+���� 02, 2019 4:40:51 ���� org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+��Ϣ: Mapped &quot;{[/inviter/addInvite]}&quot; onto public com.song.utils.CommonMsg com.song.controller.InviterController.addInvite(com.song.model.InviteInfoEntity)
+���� 02, 2019 4:40:51 ���� org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+��Ϣ: Mapped &quot;{[/inviter/delInvite/{id}]}&quot; onto public com.song.utils.CommonMsg com.song.controller.InviterController.delInvite(int)
+���� 02, 2019 4:40:51 ���� org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+��Ϣ: Mapped &quot;{[/user/getEmpNameById/{uid}]}&quot; onto public com.song.utils.CommonMsg com.song.controller.loginController.getEmpNameById(int)
+���� 02, 2019 4:40:51 ���� org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+��Ϣ: Mapped &quot;{[/user/login],methods=[POST]}&quot; onto public java.lang.String com.song.controller.loginController.login(com.song.model.userEntity,javax.servlet.http.HttpSession)
+���� 02, 2019 4:40:51 ���� org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+��Ϣ: Mapped &quot;{[/user/register],methods=[POST]}&quot; onto public com.song.utils.CommonMsg com.song.controller.loginController.registerUser(com.song.model.userEntity,org.springframework.validation.BindingResult)
+���� 02, 2019 4:40:51 ���� org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+��Ϣ: Mapped &quot;{[/user/login],methods=[GET]}&quot; onto public java.lang.String com.song.controller.loginController.loginUI() throws java.lang.Exception
+���� 02, 2019 4:40:51 ���� org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+��Ϣ: Mapped &quot;{[/user/checkuser],methods=[POST]}&quot; onto public com.song.utils.CommonMsg com.song.controller.loginController.checkuser(java.lang.String)
+���� 02, 2019 4:40:51 ���� org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+��Ϣ: Mapped &quot;{[/newMessage/getEmpMessageData/{pn}]}&quot; onto public com.song.utils.CommonMsg com.song.controller.NewMessageController.getEmpMessageData(int,javax.servlet.http.HttpSession)
+���� 02, 2019 4:40:51 ���� org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+��Ϣ: Mapped &quot;{[/newMessage/getNewMessageData/{pn}]}&quot; onto public com.song.utils.CommonMsg com.song.controller.NewMessageController.getNewMessageData(int,javax.servlet.http.HttpSession)
+���� 02, 2019 4:40:51 ���� org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+��Ϣ: Mapped &quot;{[/resume/updateResumeDeptManage]}&quot; onto public com.song.utils.CommonMsg com.song.controller.ResumeController.updateResumeDeptManage(int,int,java.lang.String) throws java.text.ParseException
+���� 02, 2019 4:40:51 ���� org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+��Ϣ: Mapped &quot;{[/resume/showResumeData/{pn}]}&quot; onto public com.song.utils.CommonMsg com.song.controller.ResumeController.showResumeData(int)
+���� 02, 2019 4:40:51 ���� org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+��Ϣ: Mapped &quot;{[/resume/refuseVisitorResume/{resumeid}]}&quot; onto public com.song.utils.CommonMsg com.song.controller.ResumeController.refuseVisitorResume(int,javax.servlet.http.HttpSession)
+���� 02, 2019 4:40:51 ���� org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+��Ϣ: Mapped &quot;{[/resume/writeResumeAgain/{resumeId}]}&quot; onto public com.song.utils.CommonMsg com.song.controller.ResumeController.writeResumeAgain(int)
+���� 02, 2019 4:40:51 ���� org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+��Ϣ: Mapped &quot;{[/resume/offerVisitorResume]}&quot; onto public com.song.utils.CommonMsg com.song.controller.ResumeController.offerVisitorResume(com.song.model.userEntity,int,javax.servlet.http.HttpSession)
+���� 02, 2019 4:40:51 ���� org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+��Ϣ: Mapped &quot;{[/resume/updateResumeAdvice]}&quot; onto public com.song.utils.CommonMsg com.song.controller.ResumeController.updateResumeAdvice(int,java.lang.String) throws java.text.ParseException
+���� 02, 2019 4:40:51 ���� org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+��Ϣ: Mapped &quot;{[/resume/getAppointResumeData/{pn}]}&quot; onto public com.song.utils.CommonMsg com.song.controller.ResumeController.getAppointResumeData(int,javax.servlet.http.HttpSession)
+���� 02, 2019 4:40:51 ���� org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+��Ϣ: Mapped &quot;{[/resume/updateResumeCheck]}&quot; onto public com.song.utils.CommonMsg com.song.controller.ResumeController.updateResumeCheck(int,int)
+���� 02, 2019 4:40:51 ���� org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+��Ϣ: Mapped &quot;{[/resume/getResumeInfo/{id}],methods=[GET]}&quot; onto public com.song.utils.CommonMsg com.song.controller.ResumeController.getResumeInfo(int)
+���� 02, 2019 4:40:51 ���� org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+��Ϣ: Mapped &quot;{[/resume/deleteResume/{id}]}&quot; onto public com.song.utils.CommonMsg com.song.controller.ResumeController.deleteResume(int)
+���� 02, 2019 4:40:51 ���� org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+��Ϣ: Mapped &quot;{[/resumeFlow/getFlowData/{id}],methods=[GET]}&quot; onto public com.song.utils.CommonMsg com.song.controller.ResumeFlowController.getFlowData(int)
+���� 02, 2019 4:40:51 ���� org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+��Ϣ: Mapped &quot;{[/rap/findRecordById]}&quot; onto public com.song.utils.CommonMsg com.song.controller.RewardsAndPunishmentController.findRecordById(int)
+���� 02, 2019 4:40:51 ���� org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+��Ϣ: Mapped &quot;{[/rap/getDateRecords/{pn}]}&quot; onto public com.song.utils.CommonMsg com.song.controller.RewardsAndPunishmentController.getDateRecords(int,javax.servlet.http.HttpSession,java.util.Map&lt;java.lang.String, java.lang.Object&gt;,java.lang.String,java.lang.String)
+���� 02, 2019 4:40:51 ���� org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+��Ϣ: Mapped &quot;{[/rap/getUserRecords]}&quot; onto public com.song.utils.CommonMsg com.song.controller.RewardsAndPunishmentController.getUserRecords(int,javax.servlet.http.HttpSession)
+���� 02, 2019 4:40:51 ���� org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+��Ϣ: Mapped &quot;{[/rap/getDateRecordsNoUser/{pn}]}&quot; onto public com.song.utils.CommonMsg com.song.controller.RewardsAndPunishmentController.getDateRecordsNoUser(int,java.util.Map&lt;java.lang.String, java.lang.Object&gt;,java.lang.String,java.lang.String)
+���� 02, 2019 4:40:51 ���� org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+��Ϣ: Mapped &quot;{[/rap/addRapRecords],methods=[POST]}&quot; onto public com.song.utils.CommonMsg com.song.controller.RewardsAndPunishmentController.addRapRecords(com.song.model.RewardsAndPunishmendEntity)
+���� 02, 2019 4:40:51 ���� org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+��Ϣ: Mapped &quot;{[/rap/updateRecord/{id}]}&quot; onto public com.song.utils.CommonMsg com.song.controller.RewardsAndPunishmentController.updateRecord(int,com.song.model.RewardsAndPunishmendEntity)
+���� 02, 2019 4:40:51 ���� org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+��Ϣ: Mapped &quot;{[/rap/getRapRecords]}&quot; onto public com.song.utils.CommonMsg com.song.controller.RewardsAndPunishmentController.getRapRecords(int)
+���� 02, 2019 4:40:51 ���� org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+��Ϣ: Mapped &quot;{[/rap/delRapRecord/{id}]}&quot; onto public com.song.utils.CommonMsg com.song.controller.RewardsAndPunishmentController.delRapRecord(int)
+���� 02, 2019 4:40:51 ���� org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+��Ϣ: Mapped &quot;{[/train/empTrainManage/{pn}]}&quot; onto public com.song.utils.CommonMsg com.song.controller.TrainController.empTrainManage(int,javax.servlet.http.HttpSession,java.lang.String)
+���� 02, 2019 4:40:51 ���� org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+��Ϣ: Mapped &quot;{[/train/findById/{id}],methods=[GET]}&quot; onto public com.song.utils.CommonMsg com.song.controller.TrainController.findById(int)
+���� 02, 2019 4:40:51 ���� org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+��Ϣ: Mapped &quot;{[/train/addTrain],methods=[POST]}&quot; onto public com.song.utils.CommonMsg com.song.controller.TrainController.addTrain(com.song.model.TrainEntity)
+���� 02, 2019 4:40:51 ���� org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+��Ϣ: Mapped &quot;{[/train/showTrainData/{pn}]}&quot; onto public com.song.utils.CommonMsg com.song.controller.TrainController.showTrainData(int,java.lang.String)
+���� 02, 2019 4:40:51 ���� org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+��Ϣ: Mapped &quot;{[/train/updateTrain/{id}],methods=[POST]}&quot; onto public com.song.utils.CommonMsg com.song.controller.TrainController.updateTrain(int,com.song.model.TrainEntity)
+���� 02, 2019 4:40:51 ���� org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+��Ϣ: Mapped &quot;{[/train/empTrainInfo/{pn}]}&quot; onto public com.song.utils.CommonMsg com.song.controller.TrainController.empTrainInfo(int,javax.servlet.http.HttpSession,java.lang.String,java.util.Map&lt;java.lang.String, java.lang.Object&gt;)
+���� 02, 2019 4:40:51 ���� org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+��Ϣ: Mapped &quot;{[/train/delTrain/{id}]}&quot; onto public com.song.utils.CommonMsg com.song.controller.TrainController.delTrain(int)
+���� 02, 2019 4:40:51 ���� org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+��Ϣ: Mapped &quot;{[/trainExam/updateTrainGrade/{trainId}]}&quot; onto public com.song.utils.CommonMsg com.song.controller.TrainExamController.updateTrainGrade(int,javax.servlet.http.HttpSession,int)
+���� 02, 2019 4:40:51 ���� org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+��Ϣ: Mapped &quot;{[/trainExam/sendTrainExam]}&quot; onto public com.song.utils.CommonMsg com.song.controller.TrainExamController.sendTrainExam(int)
+���� 02, 2019 4:40:51 ���� org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+��Ϣ: Mapped &quot;{[/trainExam/ifSendExam/{trainId}]}&quot; onto public com.song.utils.CommonMsg com.song.controller.TrainExamController.ifSendExam(int)
+���� 02, 2019 4:40:51 ���� org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+��Ϣ: Mapped &quot;{[/visitor/showInviterInfoJSON]}&quot; onto public com.github.pagehelper.PageInfo com.song.controller.VisitorController.showInviterInfo(int)
+���� 02, 2019 4:40:51 ���� org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+��Ϣ: Mapped &quot;{[/visitor/showInviterInfo]}&quot; onto public java.lang.String com.song.controller.VisitorController.showInviterInfo()
+���� 02, 2019 4:40:51 ���� org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+��Ϣ: Mapped &quot;{[/visitor/showViMessageInfo]}&quot; onto public java.lang.String com.song.controller.VisitorController.showMessageInfo(javax.servlet.http.HttpSession,org.springframework.ui.Model)
+���� 02, 2019 4:40:51 ���� org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+��Ϣ: Mapped &quot;{[/visitor/inviterWrite]}&quot; onto public java.lang.String com.song.controller.VisitorController.inviterWrite(javax.servlet.http.HttpSession,org.springframework.ui.Model)
+���� 02, 2019 4:40:51 ���� org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+��Ϣ: Mapped &quot;{[/visitor/updateResume]}&quot; onto public com.song.utils.CommonMsg com.song.controller.VisitorController.updateResume(com.song.model.ResumeEntity,javax.servlet.http.HttpSession)
+���� 02, 2019 4:40:51 ���� org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+��Ϣ: Mapped &quot;{[/visitor/saveResume],methods=[POST]}&quot; onto public com.song.utils.CommonMsg com.song.controller.VisitorController.saveResume(com.song.model.ResumeEntity,javax.servlet.http.HttpSession)
+���� 02, 2019 4:40:51 ���� org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+��Ϣ: Mapped &quot;{[/wage/getReConsiderWage/{pn}]}&quot; onto public com.song.utils.CommonMsg com.song.controller.WageController.getReConsiderWage(int)
+���� 02, 2019 4:40:51 ���� org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+��Ϣ: Mapped &quot;{[/wage/updateUserWage/{id}],methods=[POST]}&quot; onto public com.song.utils.CommonMsg com.song.controller.WageController.updateUserWage(int,javax.servlet.http.HttpSession,com.song.model.WageEntity,com.song.model.WageFlowEntity)
+���� 02, 2019 4:40:51 ���� org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+��Ϣ: Mapped &quot;{[/wage/updateAdminWage/{id}],methods=[POST]}&quot; onto public com.song.utils.CommonMsg com.song.controller.WageController.updateAdminWage(int,com.song.model.WageEntity,com.song.model.WageFlowEntity)
+���� 02, 2019 4:40:51 ���� org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+��Ϣ: Mapped &quot;{[/wage/wageSettlement]}&quot; onto public com.song.utils.CommonMsg com.song.controller.WageController.wageSettlement(java.util.Map&lt;java.lang.String, java.lang.Object&gt;)
+���� 02, 2019 4:40:51 ���� org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+��Ϣ: Mapped &quot;{[/wage/findUserWage/{uId}]}&quot; onto public com.song.utils.CommonMsg com.song.controller.WageController.findUserWage(int)
+���� 02, 2019 4:40:51 ���� org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+��Ϣ: Mapped &quot;{[/wage/getUserWage/{pn}],methods=[GET]}&quot; onto public com.song.utils.CommonMsg com.song.controller.WageController.getUserWage(int,javax.servlet.http.HttpSession)
+���� 02, 2019 4:40:51 ���� org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+��Ϣ: Mapped &quot;{[/wageFlow/getFlowData/{id}],methods=[GET]}&quot; onto public com.song.utils.CommonMsg com.song.controller.WageFlowCntroller.getFlowData(int)
+���� 02, 2019 4:40:51 ���� org.hibernate.validator.internal.util.Version &lt;clinit&gt;
+INFO: HV000001: Hibernate Validator 5.4.1.Final
+���� 02, 2019 4:40:52 ���� org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter initControllerAdviceCache
+��Ϣ: Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@5f159092: startup date [Fri Aug 02 16:40:46 CST 2019]; root of context hierarchy
+���� 02, 2019 4:40:52 ���� org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter initControllerAdviceCache
+��Ϣ: Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@5f159092: startup date [Fri Aug 02 16:40:46 CST 2019]; root of context hierarchy
+���� 02, 2019 4:40:52 ���� org.springframework.mock.web.MockServletContext log
+��Ϣ: Initializing Spring FrameworkServlet &apos;&apos;
+���� 02, 2019 4:40:52 ���� org.springframework.test.web.servlet.TestDispatcherServlet initServletBean
+��Ϣ: FrameworkServlet &apos;&apos;: initialization started
+���� 02, 2019 4:40:52 ���� org.springframework.test.web.servlet.TestDispatcherServlet initServletBean
+��Ϣ: FrameworkServlet &apos;&apos;: initialization completed in 24 ms
+</system-err>
+  </testcase>
+  <testcase time="0.016" classname="com.song.test.MockMvcTest" name="testUser"/>
+</testsuite>
