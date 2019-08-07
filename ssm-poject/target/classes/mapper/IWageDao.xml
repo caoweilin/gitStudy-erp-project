@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.song.dao.IWageDao">
-  <resultMap id="BaseResultMap" type="com.song.model.WageEntity">
+<mapper namespace="com.will.dao.IWageDao">
+  <resultMap id="BaseResultMap" type="com.will.model.WageEntity">
     <id column="wage_id" jdbcType="INTEGER" property="wageId" />
     <result column="emp_id" jdbcType="INTEGER" property="empId" />
     <result column="years" jdbcType="VARCHAR" property="years" />
@@ -16,8 +16,8 @@
     <result column="descript" jdbcType="VARCHAR" property="descript" />
     <result column="admin_descript" jdbcType="VARCHAR" property="adminDescript" />
   </resultMap>
-  <resultMap type="com.song.model.WageEntity" id="BaseResultMapWithUser" extends="BaseResultMap">
-  		<association property="user" javaType="com.song.model.userEntity">
+  <resultMap type="com.will.model.WageEntity" id="BaseResultMapWithUser" extends="BaseResultMap">
+  		<association property="user" javaType="com.will.model.userEntity">
   			<id column="user_id" jdbcType="INTEGER" property="userId" />
 		    <result column="role_id" jdbcType="INTEGER" property="roleId" />
 		    <result column="parent_id" jdbcType="INTEGER" property="parentId" />
@@ -75,7 +75,7 @@
     delete from t_wage
     where wage_id = #{wageId,jdbcType=INTEGER}
   </delete>
-  <insert id="insert" parameterType="com.song.model.WageEntity">
+  <insert id="insert" parameterType="com.will.model.WageEntity">
     insert into t_wage (wage_id, emp_id, years, 
       months, total_wage, base_wage, 
       perf_wage, ov_wage, rap_wage, 
@@ -87,7 +87,7 @@
       #{jinpoWage,jdbcType=DECIMAL}, #{state,jdbcType=INTEGER}, #{descript,jdbcType=VARCHAR}, 
       #{adminDescript,jdbcType=VARCHAR})
   </insert>
-  <insert id="insertSelective" parameterType="com.song.model.WageEntity">
+  <insert id="insertSelective" parameterType="com.will.model.WageEntity">
     insert into t_wage
     <trim prefix="(" suffix=")" suffixOverrides=",">
       <if test="wageId != null">
@@ -172,7 +172,7 @@
       </if>
     </trim>
   </insert>
-  <update id="updateByPrimaryKeySelective" parameterType="com.song.model.WageEntity">
+  <update id="updateByPrimaryKeySelective" parameterType="com.will.model.WageEntity">
     update t_wage
     <set>
       <if test="empId != null">
@@ -214,7 +214,7 @@
     </set>
     where wage_id = #{wageId,jdbcType=INTEGER}
   </update>
-  <update id="updateByPrimaryKey" parameterType="com.song.model.WageEntity">
+  <update id="updateByPrimaryKey" parameterType="com.will.model.WageEntity">
     update t_wage
     set emp_id = #{empId,jdbcType=INTEGER},
       years = #{years,jdbcType=VARCHAR},

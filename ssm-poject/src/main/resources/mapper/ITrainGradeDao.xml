@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.song.dao.ITrainGradeDao">
-  <resultMap id="BaseResultMap" type="com.song.model.TrainGradeEntity">
+<mapper namespace="com.will.dao.ITrainGradeDao">
+  <resultMap id="BaseResultMap" type="com.will.model.TrainGradeEntity">
     <id column="grade_id" jdbcType="INTEGER" property="gradeId" />
     <result column="user_id" jdbcType="INTEGER" property="userId" />
     <result column="train_id" jdbcType="INTEGER" property="trainId" />
@@ -20,13 +20,13 @@
     delete from t_train_grade
     where grade_id = #{gradeId,jdbcType=INTEGER}
   </delete>
-  <insert id="insert" parameterType="com.song.model.TrainGradeEntity">
+  <insert id="insert" parameterType="com.will.model.TrainGradeEntity">
     insert into t_train_grade (grade_id, user_id, train_id, 
       grade)
     values (#{gradeId,jdbcType=INTEGER}, #{userId,jdbcType=INTEGER}, #{trainId,jdbcType=INTEGER}, 
       #{grade,jdbcType=INTEGER})
   </insert>
-  <insert id="insertSelective" parameterType="com.song.model.TrainGradeEntity">
+  <insert id="insertSelective" parameterType="com.will.model.TrainGradeEntity">
     insert into t_train_grade
     <trim prefix="(" suffix=")" suffixOverrides=",">
       <if test="gradeId != null">
@@ -57,7 +57,7 @@
       </if>
     </trim>
   </insert>
-  <update id="updateByPrimaryKeySelective" parameterType="com.song.model.TrainGradeEntity">
+  <update id="updateByPrimaryKeySelective" parameterType="com.will.model.TrainGradeEntity">
     update t_train_grade
     <set>
       <if test="userId != null">
@@ -72,7 +72,7 @@
     </set>
     where grade_id = #{gradeId,jdbcType=INTEGER}
   </update>
-  <update id="updateByPrimaryKey" parameterType="com.song.model.TrainGradeEntity">
+  <update id="updateByPrimaryKey" parameterType="com.will.model.TrainGradeEntity">
     update t_train_grade
     set user_id = #{userId,jdbcType=INTEGER},
       train_id = #{trainId,jdbcType=INTEGER},

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.song.dao.IRewardsAndPunishmendDao">
-  <resultMap id="BaseResultMap" type="com.song.model.RewardsAndPunishmendEntity">
+<mapper namespace="com.will.dao.IRewardsAndPunishmendDao">
+  <resultMap id="BaseResultMap" type="com.will.model.RewardsAndPunishmendEntity">
     <id column="rap_id" jdbcType="INTEGER" property="rapId" />
     <result column="user_id" jdbcType="INTEGER" property="userId" />
     <result column="years" jdbcType="VARCHAR" property="years" />
@@ -11,8 +11,8 @@
     <result column="reason" jdbcType="VARCHAR" property="reason" />
     <result column="type" jdbcType="VARCHAR" property="type" />
   </resultMap>
-  <resultMap type="com.song.model.RewardsAndPunishmendEntity" id="BaseResultMapWithUser" extends="BaseResultMap">
-  		<association property="user" javaType="com.song.model.userEntity">
+  <resultMap type="com.will.model.RewardsAndPunishmendEntity" id="BaseResultMapWithUser" extends="BaseResultMap">
+  		<association property="user" javaType="com.will.model.userEntity">
   			<id column="user_id" jdbcType="INTEGER" property="userId" />
 		    <result column="role_id" jdbcType="INTEGER" property="roleId" />
 		    <result column="parent_id" jdbcType="INTEGER" property="parentId" />
@@ -83,7 +83,7 @@
     delete from t_reards_and_punishment
     where rap_id = #{rapId,jdbcType=INTEGER}
   </delete>
-  <insert id="insert" parameterType="com.song.model.RewardsAndPunishmendEntity">
+  <insert id="insert" parameterType="com.will.model.RewardsAndPunishmendEntity">
     insert into t_reards_and_punishment (rap_id, user_id, years, 
       months, money, create_time, 
       reason, type)
@@ -91,7 +91,7 @@
       #{months,jdbcType=VARCHAR}, #{money,jdbcType=DECIMAL}, #{createTime,jdbcType=TIMESTAMP}, 
       #{reason,jdbcType=VARCHAR}, #{type})
   </insert>
-  <insert id="insertSelective" parameterType="com.song.model.RewardsAndPunishmendEntity">
+  <insert id="insertSelective" parameterType="com.will.model.RewardsAndPunishmendEntity">
     insert into t_reards_and_punishment
     <trim prefix="(" suffix=")" suffixOverrides=",">
       <if test="rapId != null">
@@ -146,7 +146,7 @@
       </if>
     </trim>
   </insert>
-  <update id="updateByPrimaryKeySelective" parameterType="com.song.model.RewardsAndPunishmendEntity">
+  <update id="updateByPrimaryKeySelective" parameterType="com.will.model.RewardsAndPunishmendEntity">
     update t_reards_and_punishment
     <set>
       <if test="userId != null">
@@ -173,7 +173,7 @@
     </set>
     where rap_id = #{rapId,jdbcType=INTEGER}
   </update>
-  <update id="updateByPrimaryKey" parameterType="com.song.model.RewardsAndPunishmendEntity">
+  <update id="updateByPrimaryKey" parameterType="com.will.model.RewardsAndPunishmendEntity">
     update t_reards_and_punishment
     set user_id = #{userId,jdbcType=INTEGER},
       years = #{years,jdbcType=VARCHAR},

@@ -27,7 +27,7 @@
 	    </property>
 	</bean>
 	<!-- 配置邮件发送类 -->
-	<bean id="mail" class="com.song.mail.InviterViewMail" >
+	<bean id="mail" class="com.will.mail.InviterViewMail" >
 	   <property name="javaMailSender" ref="sendMail"></property>
 	</bean>
 </beans>

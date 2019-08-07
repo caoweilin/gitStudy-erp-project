@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.song.dao.IResumeDao">
-  <resultMap id="BaseResultMap" type="com.song.model.ResumeEntity">
+<mapper namespace="com.will.dao.IResumeDao">
+  <resultMap id="BaseResultMap" type="com.will.model.ResumeEntity">
     <id column="resume_id" jdbcType="INTEGER" property="resumeId" />
     <result column="user_id" jdbcType="INTEGER" property="userId" />
     <result column="toadmin_id" jdbcType="INTEGER" property="toadminId" />
@@ -66,7 +66,7 @@
     delete from t_resume
     where resume_id = #{resumeId,jdbcType=INTEGER}
   </delete>
-  <insert id="insert" parameterType="com.song.model.ResumeEntity">
+  <insert id="insert" parameterType="com.will.model.ResumeEntity">
     insert into t_resume (resume_id, user_id, toadmin_id, 
       name, gender, age, 
       phone_number, job_dept, job_positon, pre_job, 
@@ -80,7 +80,7 @@
       #{politicsStatus,jdbcType=VARCHAR}, #{jobExp,jdbcType=VARCHAR}, #{hobbies,jdbcType=VARCHAR}, 
       #{mark,jdbcType=VARCHAR}, #{state,jdbcType=INTEGER}, #{interviewDate})
   </insert>
-  <insert id="insertSelective" parameterType="com.song.model.ResumeEntity">
+  <insert id="insertSelective" parameterType="com.will.model.ResumeEntity">
     insert into t_resume
     <trim prefix="(" suffix=")" suffixOverrides=",">
       <if test="resumeId != null">
@@ -201,7 +201,7 @@
       </if>
     </trim>
   </insert>
-  <update id="updateByPrimaryKeySelective" parameterType="com.song.model.ResumeEntity">
+  <update id="updateByPrimaryKeySelective" parameterType="com.will.model.ResumeEntity">
     update t_resume
     <set>
       <if test="userId != null">
@@ -261,7 +261,7 @@
     </set>
     where resume_id = #{resumeId,jdbcType=INTEGER}
   </update>
-  <update id="updateByPrimaryKey" parameterType="com.song.model.ResumeEntity">
+  <update id="updateByPrimaryKey" parameterType="com.will.model.ResumeEntity">
     update t_resume
     set user_id = #{userId,jdbcType=INTEGER},
       toadmin_id = #{toadminId,jdbcType=INTEGER},

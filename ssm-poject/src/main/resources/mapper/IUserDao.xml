@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.song.dao.IUserDao">
-  <resultMap id="BaseResultMap" type="com.song.model.userEntity">
+<mapper namespace="com.will.dao.IUserDao">
+  <resultMap id="BaseResultMap" type="com.will.model.userEntity">
     <id column="user_id" jdbcType="INTEGER" property="userId" />
     <result column="role_id" jdbcType="INTEGER" property="roleId" />
     <result column="parent_id" jdbcType="INTEGER" property="parentId" />
@@ -68,6 +68,14 @@
     and role_id in (2,3,4)
   </select>
   
+    <select id="findAllEmployees" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from t_user
+    where
+    role_id = 2
+  </select>
+  
   <select id="findEmpByRoleId" resultMap="BaseResultMap">
     select 
     <include refid="Base_Column_List" />
@@ -93,7 +101,7 @@
     delete from t_user
     where user_id = #{userId,jdbcType=INTEGER}
   </delete>
-  <insert id="insert" parameterType="com.song.model.userEntity">
+  <insert id="insert" parameterType="com.will.model.userEntity">
     insert into t_user (user_id, role_id, parent_id, 
       resume_id, user_name, age, 
       password, state, gender, 
@@ -105,7 +113,7 @@
       #{email,jdbcType=VARCHAR}, #{birthDay,jdbcType=DATE}, #{education,jdbcType=VARCHAR}, 
       #{phoneNumber,jdbcType=INTEGER}, #{createTime,jdbcType=TIMESTAMP}, #{reason,jdbcType=VARCHAR}, #{salary})
   </insert>
-  <insert id="insertSelective" parameterType="com.song.model.userEntity">
+  <insert id="insertSelective" parameterType="com.will.model.userEntity">
     insert into t_user
     <trim prefix="(" suffix=")" suffixOverrides=",">
       <if test="userId != null">
@@ -208,7 +216,7 @@
       </if>
     </trim>
   </insert>
-  <update id="updateByPrimaryKeySelective" parameterType="com.song.model.userEntity">
+  <update id="updateByPrimaryKeySelective" parameterType="com.will.model.userEntity">
     update t_user
     <set>
       <if test="roleId != null">
@@ -259,7 +267,7 @@
     </set>
     where user_id = #{userId,jdbcType=INTEGER}
   </update>
-  <update id="updateByPrimaryKey" parameterType="com.song.model.userEntity">
+  <update id="updateByPrimaryKey" parameterType="com.will.model.userEntity">
     update t_user
     set role_id = #{roleId,jdbcType=INTEGER},
       parent_id = #{parentId,jdbcType=INTEGER},

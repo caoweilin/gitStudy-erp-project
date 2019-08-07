@@ -8,7 +8,7 @@
 	</settings>
 	
 	<typeAliases>
-		<package name="com.song.model"/>
+		<package name="com.will.model"/>
 	</typeAliases>
 	
 	<plugins>

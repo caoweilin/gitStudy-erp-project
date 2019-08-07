@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.song.dao.IInviteInfoDao">
-  <resultMap id="BaseResultMap" type="com.song.model.InviteInfoEntity">
+<mapper namespace="com.will.dao.IInviteInfoDao">
+  <resultMap id="BaseResultMap" type="com.will.model.InviteInfoEntity">
     <id column="invite_id" jdbcType="INTEGER" property="inviteId" />
     <result column="name" jdbcType="VARCHAR" property="name" />
     <result column="address" jdbcType="VARCHAR" property="address" />
@@ -37,7 +37,7 @@
     delete from t_invite_info
     where invite_id = #{inviteId,jdbcType=INTEGER}
   </delete>
-  <insert id="insert" parameterType="com.song.model.InviteInfoEntity">
+  <insert id="insert" parameterType="com.will.model.InviteInfoEntity">
     insert into t_invite_info (invite_id, name, address, 
       requires, job_position, welfare, 
       salary)
@@ -45,7 +45,7 @@
       #{requires,jdbcType=VARCHAR}, #{jobPosition,jdbcType=VARCHAR}, #{welfare,jdbcType=VARCHAR}, 
       #{salary,jdbcType=VARCHAR})
   </insert>
-  <insert id="insertSelective" parameterType="com.song.model.InviteInfoEntity">
+  <insert id="insertSelective" parameterType="com.will.model.InviteInfoEntity">
     insert into t_invite_info
     <trim prefix="(" suffix=")" suffixOverrides=",">
       <if test="inviteId != null">
@@ -94,7 +94,7 @@
       </if>
     </trim>
   </insert>
-  <update id="updateByPrimaryKeySelective" parameterType="com.song.model.InviteInfoEntity">
+  <update id="updateByPrimaryKeySelective" parameterType="com.will.model.InviteInfoEntity">
     update t_invite_info
     <set>
       <if test="name != null">
@@ -118,7 +118,7 @@
     </set>
     where invite_id = #{inviteId,jdbcType=INTEGER}
   </update>
-  <update id="updateByPrimaryKey" parameterType="com.song.model.InviteInfoEntity">
+  <update id="updateByPrimaryKey" parameterType="com.will.model.InviteInfoEntity">
     update t_invite_info
     set name = #{name,jdbcType=VARCHAR},
       address = #{address,jdbcType=VARCHAR},

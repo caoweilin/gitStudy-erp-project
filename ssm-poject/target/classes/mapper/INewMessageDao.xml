@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.song.dao.INewMessageDao">
-  <resultMap id="BaseResultMap" type="com.song.model.NewMessageEntity">
+<mapper namespace="com.will.dao.INewMessageDao">
+  <resultMap id="BaseResultMap" type="com.will.model.NewMessageEntity">
     <id column="message_id" jdbcType="INTEGER" property="messageId" />
     <result column="user_id" jdbcType="INTEGER" property="userId" />
     <result column="assign_id" jdbcType="INTEGER" property="assignId" />
@@ -82,7 +82,7 @@
     delete from t_new_message
     where message_id = #{messageId,jdbcType=INTEGER}
   </delete>
-  <insert id="insert" parameterType="com.song.model.NewMessageEntity">
+  <insert id="insert" parameterType="com.will.model.NewMessageEntity">
     insert into t_new_message (message_id, user_id, assign_id, 
       type, content,sender,appointedtime, message_state, 
       create_time)
@@ -90,7 +90,7 @@
       #{type,jdbcType=INTEGER}, #{content,jdbcType=VARCHAR},#{sender},#{appointedtime}, #{messageState,jdbcType=INTEGER}, 
       #{createTime,jdbcType=TIMESTAMP})
   </insert>
-  <insert id="insertSelective" parameterType="com.song.model.NewMessageEntity">
+  <insert id="insertSelective" parameterType="com.will.model.NewMessageEntity">
     insert into t_new_message
     <trim prefix="(" suffix=")" suffixOverrides=",">
       <if test="messageId != null">
@@ -151,7 +151,7 @@
       </if>
     </trim>
   </insert>
-  <update id="updateByPrimaryKeySelective" parameterType="com.song.model.NewMessageEntity">
+  <update id="updateByPrimaryKeySelective" parameterType="com.will.model.NewMessageEntity">
     update t_new_message
     <set>
       <if test="userId != null">
@@ -181,7 +181,7 @@
     </set>
     where message_id = #{messageId,jdbcType=INTEGER}
   </update>
-  <update id="updateByPrimaryKey" parameterType="com.song.model.NewMessageEntity">
+  <update id="updateByPrimaryKey" parameterType="com.will.model.NewMessageEntity">
     update t_new_message
     set user_id = #{userId,jdbcType=INTEGER},
       assign_id = #{assignId,jdbcType=INTEGER},

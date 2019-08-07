@@ -10,7 +10,7 @@
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
 
 	<!--Spring扫描整个业务包但是 不扫描前端控制器 前端控制器由springmvc扫描-->
-	<context:component-scan base-package="com.song">
+	<context:component-scan base-package="com.will">
 		<context:exclude-filter type="annotation"
 			expression="org.springframework.stereotype.Controller" />
 	</context:component-scan>
@@ -40,7 +40,7 @@
 	<!-- 配置扫描器，将mybatis接口的实现加入到ioc容器中 -->
 	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
 		<!--扫描所有dao接口的实现，加入到ioc容器中 -->
-		<property name="basePackage" value="com.song.dao"></property>
+		<property name="basePackage" value="com.will.dao"></property>
 	</bean>
 	
 	<!-- 配置一个可以执行批量的sqlSession -->
@@ -58,7 +58,7 @@
 	<!--开启基于注解的事务，使用xml配置形式的事务（必要主要的都是使用配置式）  -->
 	<aop:config>
 		<!-- 切入点表达式 -->
-		<aop:pointcut expression="execution(* com.song.service..*(..))" id="txPoint"/>
+		<aop:pointcut expression="execution(* com.will.service..*(..))" id="txPoint"/>
 		<!-- 配置事务增强 -->
 		<aop:advisor advice-ref="txAdvice" pointcut-ref="txPoint"/>
 	</aop:config>

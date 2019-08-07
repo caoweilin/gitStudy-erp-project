@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.song.dao.IDeptDao">
-  <resultMap id="BaseResultMap" type="com.song.model.DeptEntity">
+<mapper namespace="com.will.dao.IDeptDao">
+  <resultMap id="BaseResultMap" type="com.will.model.DeptEntity">
     <id column="dept_id" jdbcType="INTEGER" property="deptId" />
     <result column="dept_name" jdbcType="VARCHAR" property="deptName" />
     <result column="create_date" jdbcType="TIMESTAMP" property="createDate" />
@@ -33,13 +33,13 @@
     delete from t_dept
     where dept_id = #{deptId,jdbcType=INTEGER}
   </delete>
-  <insert id="insert" parameterType="com.song.model.DeptEntity">
+  <insert id="insert" parameterType="com.will.model.DeptEntity">
     insert into t_dept (dept_id, dept_name, create_date
       )
     values (#{deptId,jdbcType=INTEGER}, #{deptName,jdbcType=VARCHAR}, #{createDate,jdbcType=TIMESTAMP}
       )
   </insert>
-  <insert id="insertSelective" parameterType="com.song.model.DeptEntity">
+  <insert id="insertSelective" parameterType="com.will.model.DeptEntity">
     insert into t_dept
     <trim prefix="(" suffix=")" suffixOverrides=",">
       <if test="deptId != null">
@@ -64,7 +64,7 @@
       </if>
     </trim>
   </insert>
-  <update id="updateByPrimaryKeySelective" parameterType="com.song.model.DeptEntity">
+  <update id="updateByPrimaryKeySelective" parameterType="com.will.model.DeptEntity">
     update t_dept
     <set>
       <if test="deptName != null">
@@ -76,7 +76,7 @@
     </set>
     where dept_id = #{deptId,jdbcType=INTEGER}
   </update>
-  <update id="updateByPrimaryKey" parameterType="com.song.model.DeptEntity">
+  <update id="updateByPrimaryKey" parameterType="com.will.model.DeptEntity">
     update t_dept
     set dept_name = #{deptName,jdbcType=VARCHAR},
       create_date = #{createDate,jdbcType=TIMESTAMP}
