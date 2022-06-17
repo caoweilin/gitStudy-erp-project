@@ -130,7 +130,7 @@
 		<dependency>
 			<groupId>com.alibaba</groupId>
 			<artifactId>fastjson</artifactId>
-			<version>1.2.31</version>
+			<version>1.2.83</version>
 		</dependency>
 		<!-- JSR303校验 -->
 		<!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-validator -->
